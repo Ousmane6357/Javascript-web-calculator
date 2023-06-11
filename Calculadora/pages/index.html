@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="./css/main.css">
+    
+    
+</head>
+<body>
+    <h1>Tutorial calculadora de iphone</h1>
+    <table>
+        <tr>
+            <input id="input" type="text" placeholder="0">
+            <td class="calcule"> <button onclick="cleanInput()">C</button></td>
+            <td class="calcule"> <button onclick="operacionFunction()">+/-</button></td>
+            <td class="calcule"> <button onclick="operacionFunction('%')">%</button></td>
+            <td class="calcule" > <button onclick="operacionFunction('%')" style="background-color: orange; color: white;"">÷</button></td>
+        </tr>
+        <tr>
+            <td class="calcule"> <button onclick="add(7)">7</button></td>
+            <td class="calcule"> <button onclick="add(8)">8</button></td>
+            <td class="calcule"> <button onclick="add(9)">9</button></td>
+            <td class="calcule"> <button onclick="operacionFunction('*')" style="background-color: orange; color: white;"">x</button></td>
+        </tr>
+        <tr>
+            <td class="calcule"> <button onclick="add(4)">4</button></td>
+            <td class="calcule"> <button onclick="add(5)">5</button></td>
+            <td class="calcule"> <button onclick="add(6)">6</button></td>
+            <td class="calcule"> <button onclick="operacionFunction('-')" style="background-color: orange; color: white;"">-</button></td>
+        </tr>
+        <tr>
+            <td class="calcule"> <button onclick="add(1)">1</button></td>
+            <td class="calcule"> <button onclick="add(2)">2</button></td>
+            <td class="calcule"> <button onclick="add(3)">3</button></td>
+            <td class="calcule"> <button onclick="operacionFunction('+')" style="background-color: orange; color: white;">+</button></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="calcule1"> <button class="cero" onclick="add(0)">0</button></td>
+            <td class="calcule"> <button onclick="virgul()">,</button></td>
+            <td class="calcule"> <button onclick="igual()" style="background-color: orange; color: white;"">=</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="puissance2()" class="simbol"> x²</button></td>
+            <td><button onclick="cubo()" class="simbol"> x³</button></td>
+            <td><button onclick="pi()" class="simbol"> PI</button></td>
+            <td><button onclick="cuadrado('**')" class="simbol"> √</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="memori()" class="simbol"> mc</button></td>
+            <td><button onclick="guardarMemori()" class="simbol"> m+</button></td>
+            <td><button onclick="restaMemori()" class="simbol"> m-</button></td>
+            <td><button onclick="devolverMemori()" class="simbol">mr</button></td>
+            
+        </tr>
+
+    </table>
+<script src="../js/main.js"></script>
+</body>
+
+</html>
